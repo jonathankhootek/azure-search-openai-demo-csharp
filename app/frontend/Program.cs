@@ -27,4 +27,5 @@ await JSHost.ImportAsync(
     moduleUrl: $"../js/iframe.js?{Guid.NewGuid()}" /* cache bust */);
 
 var host = builder.Build();
+
 await host.RunAsync();

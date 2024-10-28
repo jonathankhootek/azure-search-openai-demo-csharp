@@ -2,14 +2,14 @@
 
 <!-- This page is intended for conversational Q&A. -->
 
-<PageTitle>Chat</PageTitle>
+<PageTitle>Project Apollo Chat</PageTitle>
 
 <MudGrid Justify="Justify.Center">
     <MudItem id="answers" xs="12" Class="overflow-x-auto">
         @if (_questionAndAnswerMap is { Count: 0 })
         {
             <div class="d-flex align-content-center flex-wrap flex-grow-1 full-height">
-                <Examples Message="Chat with your data" OnExampleClicked="@OnAskQuestionAsync" />
+                <Examples Message="Discover the Apollo 11 Mission" OnExampleClicked="@OnAskQuestionAsync" />
             </div>
         }
         else

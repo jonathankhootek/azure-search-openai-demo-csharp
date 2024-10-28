@@ -97,6 +97,8 @@ app.Use(next => context =>
 });
 app.MapFallbackToFile("index.html");
 
+app.UseMiddleware<BasicAuthMiddleware>();
+
 app.MapApi();
 
 app.Run();
